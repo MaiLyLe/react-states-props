@@ -100,8 +100,8 @@ These tasks will help you explore how React works with `state` and `props` in re
 Create a button that counts how often it's been clicked.
 
 **Bonus:**  
-- Display a “level” based on how many times the button was clicked.
-- Optional: Change the button’s color when reaching a new level.
+- Display a "level" based on how many times the button was clicked.
+- Optional: Change the button's color when reaching a new level.
 
 ---
 
@@ -188,8 +188,251 @@ Write your answers in your own words.
 
 ---
 
+## 8. Shopping Cart 🛒
+
+**Goal:**  
+Build a mini e-commerce cart system.
+
+**Instructions:**
+- Create a product list with items (name, price, image).
+- Add "Add to Cart" buttons for each product.
+- Show cart total and item count in a separate component.
+- Allow removing items from cart.
+
+**Bonus:**  
+- Add quantity controls for each item.
+- Show a "Checkout" button that clears the cart.
+
+---
+
+## 9. Color Palette Generator 🎨
+
+**Goal:**  
+Create a color palette generator with interactive controls.
+
+**Instructions:**
+- Generate 5 random colors on page load.
+- Add a "Generate New Palette" button.
+- Allow clicking on colors to copy their hex value.
+- Show color names or hex codes.
+
+**Bonus:**  
+- Add a "Lock" feature to keep specific colors when generating new ones.
+- Add brightness/contrast controls.
+
+---
+
+## 10. Timer with Controls ⏱️
+
+**Goal:**  
+Build a countdown timer with start, pause, and reset functionality.
+
+**Instructions:**
+- Create a timer that counts down from a set time (e.g., 60 seconds).
+- Add start, pause, and reset buttons.
+- Display time remaining in MM:SS format.
+- Show an alert when timer reaches zero.
+
+**Bonus:**  
+- Allow users to set custom time input.
+- Add a progress bar showing time remaining.
+- Add sound notification when timer ends.
+
+---
+
+## 11. Quiz App 🧠
+
+**Goal:**  
+Create a simple quiz with multiple choice questions.
+
+**Instructions:**
+- Store quiz questions as an array of objects.
+- Show one question at a time with multiple choice answers.
+- Track score and current question number.
+- Show final score when quiz is complete.
+
+**Bonus:**  
+- Add a "Review Answers" feature.
+- Show correct/incorrect feedback immediately.
+- Add a timer for each question.
+
+---
+
+## 12. Weather Widget 🌤️
+
+**Goal:**  
+Build a weather display component (simulated data).
+
+**Instructions:**
+- Create a weather object with temperature, condition, and location.
+- Display weather info in a card format.
+- Add a "Refresh" button to simulate new weather data.
+- Show different icons based on weather condition.
+
+**Bonus:**  
+- Add temperature unit toggle (Celsius/Fahrenheit).
+- Show 5-day forecast.
+- Add weather animations or transitions.
+
+---
+
+## 13. Password Strength Checker 🔐
+
+**Goal:**  
+Create a password input with real-time strength validation.
+
+**Instructions:**
+- Create a password input field.
+- Show strength meter (weak, medium, strong).
+- Display requirements checklist (length, numbers, symbols, etc.).
+- Change colors based on strength level.
+
+**Bonus:**  
+- Add password visibility toggle.
+- Show password generation suggestions.
+- Add character count indicator.
+
+---
+
+## 14. Memory Card Game 🃏
+
+**Goal:**  
+Build a simple memory matching game.
+
+**Instructions:**
+- Create a grid of cards (start with 6-8 cards).
+- Cards should flip when clicked.
+- Match pairs to remove them from the game.
+- Track moves and time taken.
+
+**Bonus:**  
+- Add different difficulty levels (more cards).
+- Show best score/time.
+- Add card animations and sound effects.
+
+---
+
+## 15. Todo List with Categories 📝
+
+**Goal:**  
+Enhance the basic todo list with categories and filtering.
+
+**Instructions:**
+- Add category selection when creating todos (Work, Personal, Shopping, etc.).
+- Show filter buttons to display todos by category.
+- Add priority levels (High, Medium, Low).
+- Show category-based statistics.
+
+**Bonus:**  
+- Add due dates for todos.
+- Create a calendar view.
+- Add search functionality.
+
+---
+
+## 16. Currency Converter 💱
+
+**Goal:**  
+Build a currency conversion calculator.
+
+**Instructions:**
+- Create input fields for amount and currency selection.
+- Support at least 3-4 currencies (USD, EUR, GBP, JPY).
+- Show converted amount in real-time.
+- Use fixed exchange rates (for demo purposes).
+
+**Bonus:**  
+- Add more currencies.
+- Show conversion history.
+- Add favorite currencies feature.
+
+---
+
+## 17. Recipe Calculator 👨‍🍳
+
+**Goal:**  
+Create a recipe ingredient calculator.
+
+**Instructions:**
+- Store a recipe with ingredients and quantities.
+- Allow users to adjust serving size.
+- Automatically recalculate all ingredient amounts.
+- Show total cooking time and difficulty.
+
+**Bonus:**  
+- Add ingredient categories (proteins, vegetables, spices).
+- Show nutritional information.
+- Add cooking instructions with step-by-step display.
+
+---
+
+## 18. Music Player Controls 🎵
+
+**Goal:**  
+Build a music player interface (without actual audio).
+
+**Instructions:**
+- Create play, pause, next, previous buttons.
+- Show current track info (title, artist, album).
+- Display a progress bar for track position.
+- Add volume control slider.
+
+**Bonus:**  
+- Add a playlist with multiple tracks.
+- Show album artwork.
+- Add shuffle and repeat modes.
+
+---
+
+## 19. Form Validation 📋
+
+**Goal:**  
+Create a registration form with real-time validation.
+
+**Instructions:**
+- Build a form with name, email, password, and confirm password.
+- Show validation errors in real-time.
+- Disable submit button until form is valid.
+- Show success message on valid submission.
+
+**Bonus:**  
+- Add phone number validation.
+- Show password strength indicator.
+- Add terms and conditions checkbox.
+
+---
+
+## 20. Advanced State Management 🔄
+
+**Goal:**  
+Practice complex state scenarios.
+
+**Instructions:**
+- Create a multi-step form (3-4 steps).
+- Allow navigation between steps.
+- Validate each step before proceeding.
+- Show progress indicator.
+- Allow going back to previous steps.
+
+**Bonus:**  
+- Add form data persistence (localStorage).
+- Show step completion status.
+- Add animations between steps.
+
+---
+
 ✅ **Tip for all tasks:**  
 Use `useState`, `props`, and conditional rendering. Don't be afraid to break things while learning!
+
+**Difficulty Levels:**
+- 🟢 **Beginner**: Tasks 1-7 (Basic concepts)
+- 🟡 **Intermediate**: Tasks 8-15 (More complex interactions)
+- 🔴 **Advanced**: Tasks 16-20 (Complex state management)
+
+**Learning Path:**
+1. Start with the basic tasks to understand fundamentals
+2. Move to intermediate tasks to practice real-world scenarios
+3. Challenge yourself with advanced tasks to master complex state management
 
 
 
