@@ -150,7 +150,7 @@ Create a component where clicking a button increases a "likes" counter in the pa
 ## 5. Toggle Theme 🌗
 
 **Goal:**  
-Build a component that switches between light and dark mode.
+Build a component that switches between light and dark mode. Please only change some text and bg color in THIS component. It doesn't have to be reflected throughout the App. 
 
 **Instructions:**
 - Use a `darkMode` boolean state.
