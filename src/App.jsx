@@ -1,6 +1,13 @@
+import { Link, Switch, Route } from "wouter"
 import StateExample from './components/StateExample'
 import PropsExample from './components/PropsExample'
 import InteractiveDemo from './components/InteractiveDemo'
+import Clickcounter from './components/Clickcounter'
+import Welcome from './components/Welcome'
+import DiceRoller from './components/DiceRoller'
+import LikeCounter from './components/LikeCounter'
+import ToggleTheme from './components/ToggleTheme'
+
 
 function App() {
   return (
@@ -14,10 +21,29 @@ function App() {
             Learn the fundamentals of React state management and prop passing
           </p>
         </div>
+
+        <nav className="text-center text-gray-600 text-lg">
+          <Link href="/clickcounter">Click Counter</Link> | <Link href="/welcome">Welcome</Link> | <Link href="/diceroller">Dice Roller</Link> |
+          <Link href="/likecounter">Like Counter</Link> | <Link href="/toggletheme">Toggle Theme</Link>
+        </nav>
+
+        <Switch>
+        <Route path="/clickcounter" component={Clickcounter} />
+        <Route path="/welcome">
+            <Welcome name="FL" />
+        </Route>
+        <Route path="/diceroller" component={DiceRoller} />
+        <Route path="/likecounter" component={LikeCounter} />
+        <Route path="/toggletheme" component={ToggleTheme} />
+      </Switch>
+
       </header>
       
       <main className="max-w-7xl mx-auto px-4 py-8">
         {/* Introduction Section */}
+
+        
+
         <section className="mb-12">
           <div className="bg-white rounded-xl shadow-lg p-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
@@ -110,6 +136,33 @@ function App() {
             </table>
           </div>
         </section>
+
+        {/* Click Counter with Levels */}
+        <section className="mb-12">
+          <Clickcounter />
+        </section>
+
+          {/* Greeting Component */}
+        <section className="mb-12">
+          <Welcome name="Frauenloop"/>
+        </section>
+
+          {/* Dice Roller */}
+        <section className="mb-12">
+          <DiceRoller />
+        </section>
+
+          {/* Like Button */}
+        <section className="mb-12">
+          <LikeCounter />
+        </section>
+
+          {/* Toggle Theme */}
+        <section className="mb-12">
+          <ToggleTheme />
+        </section>
+
+
       </main>
     </div>
   )
